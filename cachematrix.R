@@ -3,7 +3,7 @@
 
 ## Write a short comment describing this function
 ## Initialize the inverse property
-makeInverseMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) {
         ivn <- NULL
         set <- function(y) {
                 x <<- y
@@ -24,7 +24,7 @@ makeInverseMatrix <- function(x = matrix()) {
 }
 ## Calculate the inverson of  "makeInverseMatrix"
 ## Back to a matrix  “ivn”, indicating the invision.
-cacheinver <- function(x, ...) {
+cacheSolve <- function(x, ...) {
         ivn <- x$getinversion()
         if(!is.null(ivn)) {
                 message("getting cached data.")
